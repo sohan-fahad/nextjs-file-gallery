@@ -12,7 +12,9 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    geFiles();
+    if (!isAddModal) {
+      geFiles();
+    }
   }, [files.length, isAddModal]);
 
   const geFiles = async () => {

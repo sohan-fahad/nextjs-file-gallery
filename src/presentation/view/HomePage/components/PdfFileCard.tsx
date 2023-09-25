@@ -10,7 +10,7 @@ const PdfFileCard = (props: { file: string }) => {
         className="flex flex-col justify-center items-center gap-2"
       >
         <p className="text-xs text-black font-bold">
-          {props?.file.split("-")[1]}
+          {props?.file.slice(0, 15)}
         </p>
         <Image
           src="/images/pdf.png"

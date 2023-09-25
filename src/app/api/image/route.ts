@@ -3,11 +3,11 @@ import fs from "fs/promises";
 import { NextResponse } from "next/server";
 import { existsSync } from "fs";
 
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-};
+// export const config = {
+//     api: {
+//         bodyParser: true,
+//     },
+// };
 
 
 export async function POST(req: Request) {
@@ -49,6 +49,7 @@ export async function POST(req: Request) {
 
     }
 }
+
 
 export async function GET() {
     const data = await fs.readdir(path.join(process.cwd(), "public/uploads"))
