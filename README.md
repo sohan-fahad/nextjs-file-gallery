@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a document upload and editing application built with Tailwind, TypeScript, and React.js. It allows users to upload PDF files, add elements (text and/or images) to specific positions within the document, view the edited document, and even dictate the position (coordinates) for element placement. Plus, we've added a sprinkle of humor to make your experience enjoyable!
 
-## Getting Started
+Table of Contents
+Requirements
+Technology Stack
+Installation
+Usage
+Contributing
+License
+Requirements
+Document Upload
+Upload PDF Files: Users can easily upload PDF files from their devices.
+Progress Indicator: A progress indicator is displayed during the upload process.
+Local Storage: The uploaded files are stored locally with a maximum file size of 1 MB.
+Multiple File Upload: Users can upload multiple files simultaneously.
+Uploaded Document Editing
+Drag-and-Drop Elements: Users can add elements (text and/or images) to specific positions within the document using drag-and-drop functionality.
+Local Storage/State: Necessary information is saved in the user's local storage or state to ensure that if the page reloads, all elements remain in their original positions.
+User-Friendly UI: The user interface is designed to be user-friendly, and validations are handled appropriately.
+Document Coordination Dictation
+Coordinate Dictation: Users can specify the position (coordinates) where they want to place an element on the document, e.g., x=34, y=200.
+Document Viewing
+View Edited Document: Users can view the document after adding elements.
+Zoom-In and Zoom-Out: Zoom-in and zoom-out functionality is implemented at any specific position within the document.
+Technology Stack
+This application is built using the following technologies:
 
-First, run the development server:
+Tailwind CSS: For fast and responsive UI development.
+TypeScript: For static typing and improved developer experience.
+React.js: For building the user interface.
+Custom Hooks: Custom hooks are extensively used to manage state and functionality.
+Installation
+To run this application locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/document-upload-edit.git
+Navigate to the project directory:
+bash
+Copy code
+cd document-upload-edit
+Install dependencies:
+bash
+Copy code
+npm install
+Start the development server:
+bash
+Copy code
+npm start
+The application should now be running locally at http://localhost:3000.
