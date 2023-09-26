@@ -6,7 +6,7 @@ const PdfFileCard = (props: { file: string }) => {
   return (
     <div className="p-5 bg-gray-100 rounded-md">
       <Link
-        href="/"
+        href="/edit"
         className="flex flex-col justify-center items-center gap-2"
       >
         <p className="text-xs text-black font-bold">
